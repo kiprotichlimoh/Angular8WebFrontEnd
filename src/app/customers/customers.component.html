@@ -1,0 +1,40 @@
+<h1>TODO: Update UI and add Customers list here</h1>
+<ol>
+    <li>
+        NB: Customer A/c and Customer A/c Balance(From Accounts table) are required for every Customer. Update the API accordingly to return the expected data.
+    </li>
+    <li>Create/reuse a reusable search component(use it here to search by Customer Id)
+        <li>
+            <li>Display the search results below</li>
+</ol>
+<div class="input-group mb-3">
+    <input type="text" class="form-control" #customerID placeholder="Enter Customer ID" aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <div class="input-group-append">
+        <button class="btn btn-primary" (click)="seachCustDetailsByCustId(customerID.value)" type="button">search</button>
+    </div>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Customer Id</th>
+            <th>Customer A/c</th>
+            <th>Customer A/c Balance</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let row of CustomerDetails">
+            <td>{{row.FIRST_NAME}}</td>
+            <td>{{row.LAST_NAME}}</td>
+            <td>{{row.EMAIL}}</td>
+            <td>{{row.CUSTOMER_ID}}</td>
+            <td>{{row.ACCOUNT_NO}}</td>
+            <td>{{row.BALANCE}}</td>
+        </tr>
+    </tbody>
+</table>
+<div class="alert alert-danger" role="alert" *ngIf="!transuctionsSucess">
+    {{transuctionsFailedmessage}}
+</div>

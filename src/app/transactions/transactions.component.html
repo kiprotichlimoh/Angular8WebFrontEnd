@@ -1,0 +1,41 @@
+<h1>TODO: Add Transactions list here</h1>
+<ol>
+    <li>Create a reusable search component(use it here to serach transaction by Customer ID)
+        <li>
+            <li>Display the search results below</li>
+
+</ol>
+<div class="input-group mb-3">
+    <input type="text" class="form-control" #customerID placeholder="Enter Customer ID" aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <div class="input-group-append">
+        <button class="btn btn-primary" (click)="seachTransactionByTrnId(customerID.value)" type="button">search</button>
+    </div>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Transaction Id</th>
+            <th>Customer Id</th>
+            <th>Account No</th>
+            <th>Amount</th>
+            <th>Balance</th>
+            <th>Trn Type</th>
+            <th>Debit/Credit</th>
+        </tr>
+    </thead>
+    <tbody *ngIf="transuctionsSucess">
+        <tr *ngFor="let row of transactionDetails">
+            <td>{{row.transactionId}}</td>
+            <td>{{row.customerId}}</td>
+            <td>{{row.accountNo}}</td>
+            <td>{{row.amount}}</td>
+            <td>{{row.balance}}</td>
+            <td>{{row.transactionType}}</td>
+            <td>{{row.debitOrCredit}}</td>
+        </tr>
+    </tbody>
+
+</table>
+<div class="alert alert-danger" role="alert" *ngIf="!transuctionsSucess">
+    {{transuctionsFailedmessage}}
+</div>

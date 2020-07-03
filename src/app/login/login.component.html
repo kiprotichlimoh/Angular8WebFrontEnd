@@ -1,0 +1,24 @@
+<h1>TODO: Update UI and add Login Logic</h1>
+<p>
+    Add all required logic to login. Make sure you are able to login using the API (using employeeId and password)
+</p>
+<p>
+    No session or token is required to be maintained - Just a basic login logic
+</p>
+<div class="alert alert-danger" role="alert" *ngIf="loginerror">
+    {{loginErrorMessage}}
+</div>
+<div class="alert alert-success" role="alert" *ngIf="loginSuccess">
+    {{loginsuccessMessge}}
+</div>
+<div>
+    <div class="form-group">
+        <label for="exampleEmployeeId">Employee ID</label>
+        <input class="form-control" #username id="exampleEmployeeId" />
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword">Password</label>
+        <input type="password" #password class="form-control " id="exampleInputPassword " />
+    </div>
+    <button (click)="login(username.value, password.value)" class="btn btn-primary ">Login</button>
+</div>

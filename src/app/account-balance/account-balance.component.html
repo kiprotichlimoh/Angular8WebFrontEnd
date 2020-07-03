@@ -1,0 +1,19 @@
+<h1>TODO: Update UI and add logic to find account balance</h1>
+
+<ol>
+    <li>Create/reuse a reusable search component(use it here to account balance search Account No)</li>
+    <li>Add the results (Account No and Account Balance) below </li>
+</ol>
+<div class="input-group mb-3">
+    <input type="text" class="form-control" #accountNo placeholder="Enter Account Number" aria-label="" aria-describedby="basic-addon2">
+    <div class="input-group-append">
+        <button class="btn btn-primary" (click)="getBalance(accountNo.value)" type="button">search</button>
+    </div>
+</div>
+<div class="alert alert-danger" role="alert" *ngIf="!balanceSuccess">
+    {{balaceFailedMessage}}
+</div>
+<div *ngIf="balanceSuccess">
+    <p>Account No: {{ accountNumber }}</p>
+    <p>Account Balance: {{balance}}</p>
+</div>
