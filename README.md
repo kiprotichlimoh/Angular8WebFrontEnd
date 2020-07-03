@@ -1,29 +1,24 @@
-# Angular 8 Tutorial: Routing & Navigation Example
+# Angular 8 Tutorial: Mobile wallet Front End
 
-This source code is part of [Angular 8 Tutorial: Routing & Navigation Example](https://www.djamware.com/post/5d58b409bcc156d4a8a3df8f/angular-8-tutorial-routing-navigation-example) tutorial.
+This source code is for Mobile wallet Front End made with [Angular 8](https://angular.io/).
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
 
-## Development server
+## Prerequisites
+Node 10.9.0 or later. and NPM 5.5. 1+ installed.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Git installed.
 
-## Code scaffolding
+Running [BackEnd M-wallet Api](https://github.com/kiprotichlimoh/MobileWalletSpringBootAPI)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Instalation 
+-Run `git clone https://github.com/kiprotichlimoh/Angular8WebFrontEnd.git` from your environment.
 
-## Build
+-navigate to root folder.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+-open command prompt and run npm install to install all the dependencies 
 
-## Running unit tests
+## Running the application
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `ng serve` from cmd on root folder. Navigate to `http://localhost:4200/`. on your browser
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
