@@ -16,7 +16,7 @@ Running [BackEnd M-wallet Api](https://github.com/kiprotichlimoh/MobileWalletSpr
 
 -navigate to root folder.
 
--open command prompt and run npm install to install all the dependencies 
+-open command prompt and run `npm install` to install all the dependencies 
 
 ## Running the application
 
